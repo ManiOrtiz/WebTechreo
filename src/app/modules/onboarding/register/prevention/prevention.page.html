@@ -1,0 +1,100 @@
+<ion-header>
+  <div style="height: 40px; background-color: #9ec728;"></div>
+  <div class="contact"></div>
+</ion-header>
+
+<ion-content>
+  <div  style="float: left; padding: 0px; font-size: 30px; ">
+    <ion-icon (click)="back()" style="cursor: pointer;" name="arrow-back"></ion-icon>
+  </div>
+  <div   class="ion-padding">
+    <p class="green">Prevención</p>
+    <p class="green"> y lavado de dinero</p>
+    <p></p>
+    <ion-list>
+      <ion-item >
+        <p 
+          style="font-size: 10px;">
+            Actuó por cuenta propia y el dinero que reciba en esta cuenta es mío y no de alguna otra persona.</p>
+        <ion-checkbox slot="end" color="warning" checked="true"></ion-checkbox>
+      </ion-item>
+      <ion-item >
+        <p 
+        style="font-size: 10px;">
+          Declaro que el dinero que yo disponga y que genere esta cuenta proviene y será usado en fuentes legales.</p>
+        <ion-checkbox slot="end" color="warning" checked="true"></ion-checkbox>
+      </ion-item>
+      
+      <ion-item >
+        <p 
+        style="font-size: 10px;">
+        Solamente yo podré disponer del dinero y beneficios que genere este contrato.</p>
+        <ion-checkbox slot="end" color="warning" checked="true"></ion-checkbox>
+      </ion-item>
+      
+      <ion-item >
+        <p 
+        style="font-size: 10px;">
+        No he ocupado un cargo público actualmente, ni en los últimos 12 meses.</p>
+        <ion-checkbox slot="end" color="warning" checked="true"></ion-checkbox>
+      </ion-item>
+      <ion-item >
+        <p 
+        style="font-size: 10px;">
+        No soy familiar de alguien que ocupe o haya ocupado, en los últimos 12 meses algún cargo público.</p>
+        <ion-checkbox slot="end" color="warning" checked="true"></ion-checkbox>
+      </ion-item>
+      <ion-item >
+        <p 
+        style="font-size: 10px;">
+        No tengo residencia en el extranjero, no soy accionista de alguna empresa extranjera y no pago impuestos en ningún otro país.</p>
+        <ion-checkbox slot="end" color="warning" checked="true"></ion-checkbox>
+      </ion-item>
+      <ion-item >
+        <p 
+        style="font-size: 10px;">
+        'Confirmo que todos mis datos registrados son correctos y actuales, autorizo su verificación.</p>
+        <ion-checkbox slot="end" color="warning" checked="true"></ion-checkbox>
+      </ion-item>
+    
+      <br>
+      <hr style=" background-color: #472b74;">
+      <br>
+      <ion-item  lines="none"  color=" mess">
+        <ion-label>¿Cuál es su ocupación?</ion-label>
+        <ion-select>
+          <ion-select-option value="brown">Plomero</ion-select-option>
+          <ion-select-option value="blonde">Ingeniero</ion-select-option>
+          <ion-select-option value="black">Licenciado</ion-select-option>
+          <ion-select-option value="red">Programador</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <br>
+      <ion-item  lines="none"  color=" mess">
+        <ion-label color="dark" position="floating"> ¿Cuál es el monto de efectivo estimado que operará en esta cuenta?</ion-label>
+        <ion-input  type="number" color="dark" inputmode="text" placeholder="Numeros"></ion-input>
+      </ion-item>
+    </ion-list>
+    
+    <ion-list>
+      <br>
+      <ion-row>
+        <ion-col size="12"class="finalButtons">
+          <ion-button (click)="ok()" type="submit" expand="block" color="warning"  shape="round">
+            Continuar
+          </ion-button>
+          <br>
+          <div style="text-align: center;">
+          <mati-button id="matiButton" clientid="5e710db1ceabce001b0b4fb1" flowId="5e9576daac2c70001ca9f7ba"
+            metadata='{"guidSolicitud": "{{ guidSolicitud }}", "guidCliente": "{{ guidCliente }}"}'>
+          </mati-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-list>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div style="height: 7px; background-color: #9ec728;"></div>
+</ion-footer>

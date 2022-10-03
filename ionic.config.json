@@ -1,0 +1,7 @@
+{
+  "name": "techreoFront",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

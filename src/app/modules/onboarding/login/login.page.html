@@ -1,0 +1,92 @@
+<ion-content color="primary">
+    <!--<img style="position: absolute; margin-top: -160px; margin-left: -150px; width: 360px; transform: rotate(-45deg); opacity: 50%;" src="assets/images/pink.png" alt="">-->
+    <div class="container-color">
+        <div class="contenedor">
+            <div>
+                <img src="assets/images/telefono-cta.png">
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <ion-row>
+            <ion-col size-sm="12" size-md="12" size-lg="6">
+                <form  [formGroup]="signInForm" >
+                    <ion-row color="">
+
+                        <ion-col size-xs="2" size-sm="2"> </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="8">
+                            <div class="logo"><img src="assets/images/Techreo-logo-blanco.png"></div>
+
+                            <p class="change-password" >Hola </p>
+                            <p class="bienvenido"> Bienvenido(a)</p>
+                            <div class="ion-padding " style="margin:auto; width: 80%; ">
+                                <ion-list>
+                                    <ion-item
+                                      lines="none"
+                                      color="primary mess">
+                                      <ion-label
+                                          color="light"
+                                          position="floating">Email, teléfono, correo </ion-label>
+                                      <ion-input
+                                        type="number"
+                                         color="light"
+                                         inputmode="text"
+                                         placeholder="prueba@gmail.com"></ion-input>
+                                      <ion-icon
+                                          name="person"
+                                          color="light"
+                                          slot="end"
+                                          style="padding-top: 10px;"></ion-icon>
+                                    </ion-item>
+                                    <br>
+                                    <ion-item lines="none"  color="primary mess">
+                                        <ion-label
+                                        color="light" position="floating ">Contraseña Actual</ion-label>
+                                        <ion-input
+                                            name="password"
+
+                                            [type]="showPassword ? 'text': 'password'"
+                                            color="light" inputmode="text"
+                                            placeholder="Contraseña"
+                                            [formControlName]="'password'"
+                                            ></ion-input>
+                                        <ion-icon [name]="passwordToggleIcon" (click)="togglePassword()" ccolor="light" slot="end" style="padding-top: 10px; font-size: 20px;"></ion-icon>
+                                    </ion-item>
+                                </ion-list>
+                                <ion-row>
+                                    <ion-col size="12" class="finalButtons">
+                                      <p class="register" (click)="onPhone()" style="font-size: 13px; font-weight: 500; cursor: pointer;">Olvidé mi contraseña</p>
+                                        <ion-button
+                                          type="submit"
+                                          expand="block"
+                                          color="warning"
+                                          (click)="send()"
+                                          shape="round">
+                                            Aceptar
+                                        </ion-button>
+                                    </ion-col>
+                                </ion-row>
+                                <br>
+                                <p
+                                  class="olvido-contrasena"
+                                  style="font-size: 13px; font-weight: 500; cursor: pointer;">Soy nuevo
+                                    <a (click)="onPhone()"
+                                    class="olvido-contrasena">Registrarme</a></p>
+                                <br>
+                                <p
+                                  class="olvido-contrasena"
+                                  (click)="contact()"
+                                  style="font-size: 13px; font-weight: 500; cursor: pointer;">Contacto</p>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </form>
+            </ion-col>
+        </ion-row>
+
+    </div>
+</ion-content>
+
+<ion-footer>
+    <div style="height: 7px; background-color: #9ec728;"></div>
+</ion-footer>

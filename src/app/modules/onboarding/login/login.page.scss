@@ -1,0 +1,105 @@
+#container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.change-password {
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.bienvenido{
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+
+.mess {
+  border: 2px solid #8b8b8b;
+}
+
+.padding {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+$main-color-pal-negocio: #dfdfdf3b;
+.border {
+    border: solid 1px $main-color-pal-negocio;
+}
+
+@media (max-width:991px) {
+    .container-color {
+        display: none;
+    }
+}
+
+.finalButtons {
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.olvido-contrasena {
+    color: #9ec728;
+    text-align: center;
+}
+
+.register {
+  color: #ffffff;
+  text-align: center;
+}
+
+.olvido-contrasena:hover {
+    color: #c0c0c0;
+}
+
+.container-color {
+    width: 50%;
+    height: 100%;
+    background-color: #32144e;
+    background-image: url('../../../../assets/images/bg-posible.jpg');
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/**.container-color::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.30);
+}*/
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 105px;
+}

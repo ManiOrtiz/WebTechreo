@@ -1,0 +1,41 @@
+
+<ion-content color="primary">
+  <div  id="container">
+    <img class="rotar" id="center" src="assets/images/Techreo-logo-blanco.png">
+    <p><strong>Hola</strong></p>
+    <p>Registrate y disfruta  </p>
+    <p>de muchos beneficios</p>
+
+    <div class="ion-padding">
+      <ion-list>
+        <ion-item  lines="none"  color="primary mess">
+          <ion-label color="light" position="floating">Teléfono</ion-label>
+          <ion-input  type="number" color="light" inputmode="text" placeholder="(55) 1234 5678"></ion-input>
+          <ion-icon name="call" color="light" slot="end" style="padding-top: 10px;"></ion-icon>
+        </ion-item>
+        <br>
+        <ion-item  lines="none"  color="primary mess">
+          <ion-label color="light" position="floating">Repetir Teléfono</ion-label>
+          <ion-input  type="number" color="light" inputmode="text" placeholder="(55) 1234 5678"></ion-input>
+          <ion-icon name="call" color="light" slot="end" style="padding-top: 10px;"></ion-icon>
+        </ion-item>
+      </ion-list>
+
+      <ion-row>
+        <ion-col class="finalButtons">
+          <ion-button (click)="ok()" type="submit" expand="block" color="warning"  shape="round">
+            Entrar
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <br>
+      <p>Ya tengo Cuenta  | <small   class="olvido-contrasena" (click)="contact()"  style="color: #9ec728; font-size: 15px;">Login</small> </p>
+      <br>
+    </div>
+
+  </div>
+</ion-content>
+
+<ion-footer>
+   <div style="height: 7px; background-color: #9ec728;"></div>
+</ion-footer>

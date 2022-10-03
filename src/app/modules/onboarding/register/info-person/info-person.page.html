@@ -1,0 +1,118 @@
+<ion-header>
+  <div style="height: 40px; background-color: #9ec728;"></div>
+  <div class="contact"></div>
+</ion-header>
+
+<ion-content>
+  <div  style="float: left; padding: 0px; font-size: 30px; ">
+    <ion-icon (click)="back()" style="cursor: pointer;" name="arrow-back"></ion-icon>
+  </div>
+  <div   class="ion-padding">
+  <br>
+    <ion-list>
+      <ion-item  lines="none"  color=" mess">
+        <ion-label color="dark" position="floating">Nombres</ion-label>
+        <ion-input   color="dark" inputmode="text" placeholder="Coloca tus nombres "></ion-input>
+        <ion-icon name="person" color="dark" slot="end" style="padding-top: 10px;"></ion-icon>
+      </ion-item>
+      <br>
+      <ion-item  lines="none"  color=" mess">
+        <ion-label color="dark" position="floating">Apellido Paterno</ion-label>
+        <ion-input   color="dark" inputmode="text" placeholder="Coloca tu Apellido Paterno "></ion-input>
+        <ion-icon name="person" color="dark" slot="end" style="padding-top: 10px;"></ion-icon>
+      </ion-item>
+      <br>
+      <ion-item  lines="none"  color=" mess">
+        <ion-label color="dark" position="floating">Apellido Materno</ion-label>
+        <ion-input   color="dark" inputmode="text" placeholder="Coloca tu Apellido Materno "></ion-input>
+        <ion-icon name="person" color="dark" slot="end" style="padding-top: 10px;"></ion-icon>
+      </ion-item>
+      <br>
+      <ion-item  lines="none"  color=" mess">
+        <ion-label color="dark" position="floating">C.U.R.P.</ion-label>
+        <ion-input   color="dark" inputmode="text" placeholder="Coloca tu CURP "></ion-input>
+        <ion-icon name="person" color="dark" slot="end" style="padding-top: 10px;"></ion-icon>
+      </ion-item>
+      <br>
+      <ion-item  lines="none"  color=" mess">
+        <ion-label color="dark" position="floating">R.F.C.</ion-label>
+        <ion-input   color="dark" inputmode="text" placeholder="Coloca tu RFC "></ion-input>
+        <ion-icon name="person" color="dark" slot="end" style="padding-top: 10px;"></ion-icon>
+      </ion-item>
+      <br>
+      <ion-item  lines="none"  color=" mess">
+        <ion-label color="dark" position="floating">Folio de Identificación</ion-label>
+        <ion-input   color="dark" inputmode="text" placeholder="Coloca tu Folio de Identificación "></ion-input>
+        <ion-icon name="person" color="dark" slot="end" style="padding-top: 10px;"></ion-icon>
+      </ion-item>
+      <br>
+
+      <ion-item  *ngIf="t"  lines="none"  color=" mess">
+        <ion-label color="dark" position="floating">Fecha de nacimiento</ion-label>
+        <ion-input (click)="onClick()"  color="dark" inputmode="text" placeholder="Fecha de nacimiento"></ion-input>
+        <ion-icon name="person" color="dark" slot="end" style="padding-top: 10px;"></ion-icon>
+      </ion-item>
+
+      <ion-item *ngIf="!t" class="mess">
+        <ion-label>Date</ion-label>
+        <ion-datetime displayFormat="DD/MM/YYYY  h:mm a" ></ion-datetime>
+      </ion-item>
+
+      <br>
+      <ion-item  lines="none"  color=" mess">
+        <ion-label>País de Nacimiento</ion-label>
+        <ion-select>
+          <ion-select-option value="brown">Mexico</ion-select-option>
+          <ion-select-option value="blonde">Panama</ion-select-option>
+          <ion-select-option value="black">Alemania</ion-select-option>
+          <ion-select-option value="red">Polonia</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <br>
+      <ion-item  lines="none"  color=" mess">
+        <ion-label>Estado Civil</ion-label>
+        <ion-select>
+          <ion-select-option value="brown">Casado(a)</ion-select-option>
+          <ion-select-option value="blonde">Soltero(a)</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-row>
+        <ion-col size="6">
+          <ion-item >
+            <p 
+              style="font-size: 10px;">
+                Masculin</p>
+            <ion-checkbox slot="end" color="warning" checked="true"></ion-checkbox>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6">
+          <ion-item >
+            <ion-checkbox slot="start" color="warning" checked="true"></ion-checkbox>
+            <p 
+              style="font-size: 10px;">
+                Femenino.</p>
+            
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+    </ion-list>
+    
+    <ion-list>
+      <br>
+      <ion-row>
+        <ion-col size="12"class="finalButtons">
+          <ion-button (click)="ok()" type="submit" expand="block" color="warning"  shape="round">
+            Continuar
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-list>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div style="height: 7px; background-color: #9ec728;"></div>
+</ion-footer>
